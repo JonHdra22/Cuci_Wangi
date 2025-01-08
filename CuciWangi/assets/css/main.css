@@ -3329,6 +3329,21 @@ table.alt tbody tr td {
 }
 
 /* Wrapper */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
 
 #wrapper {
   -moz-transition: opacity 0.5s ease;
@@ -3340,28 +3355,6 @@ table.alt tbody tr td {
   overflow: hidden;
 }
 
-#wrapper > .bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #212931;
-  background-image: url("../../images/overlay.png"),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("../../images/bgg.jpg");
-  background-size: auto, auto, 100% auto;
-  background-position: center, center, top center;
-  background-repeat: repeat, no-repeat, no-repeat;
-  background-attachment: scroll, scroll, scroll;
-  z-index: -1;
-}
-
-#wrapper > .bg.fixed {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-}
 
 #wrapper.fade-in:before {
   pointer-events: none;
@@ -3529,6 +3522,7 @@ body.is-preload #wrapper.fade-in:before {
   transform: translateY(2rem);
   opacity: 0;
   visibility: hidden;
+  text-decoration: none;
 }
 
 #intro.hidden {
@@ -3837,6 +3831,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 #nav ul.links li {
   display: block;
   padding-left: 0;
+  text-decoration: none;
 }
 
 #nav ul.links li a {
@@ -3848,6 +3843,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   font-size: 0.8rem;
   outline: none;
   padding: 0 2rem;
+  text-decoration: none;
 }
 
 #nav ul.links li a:hover {
@@ -3920,7 +3916,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 #main > .post header.major > h1,
 #main > .post header.major h2 {
-  font-size: 4rem;
+  font-size: 2.8rem;
   line-height: 1.1;
   margin: 0 0 2rem 0;
 }
@@ -4511,7 +4507,6 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 #copyright {
   color: #ffffff;
   position: relative;
-  color: rgba(255, 255, 255, 0.25);
   cursor: default;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 0.8rem;
@@ -4810,4 +4805,49 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
     visibility: visible;
   }
+}
+
+/* Desain untuk Tombol WhatsApp */
+.foot-wa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0;
+}
+
+#whatsapp {
+  text-align: center;
+}
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 25px;
+  background-color: #25d366; /* Warna hijau WhatsApp */
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-button img {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.whatsapp-button:hover {
+  background-color: #1daf57;
+  transform: scale(1.05);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.whatsapp-button span {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
 }
