@@ -1,140 +1,238 @@
 <!DOCTYPE HTML>
-
 <html>
 	<head>
-		<title>Cuci Wangi</title>
+		<title>CW</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!-- Bootstrap CSS Lokal -->
 		<link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Leaflet CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+		<style>
+
+		</style>
 	</head>
+
 	<body class="is-preload">
+		<!-- Video Background -->
+		<div class="video-background">
+			<video autoplay loop muted playsinline>
+				<source src="vidio/vidio.mp4" type="video/mp4">
+			</video>
+		</div>
 
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+		<div id="wrapper" class="fade-in">
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Cuci Wangi</h1>
-						<p>The Best Cleaning Shop In Indonesia</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
-
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Scroll Down</a>
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="#">About</a></li> 
-							<li><a href="#">Contact</a></li> 
-						</ul>
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon "><img src="images/logo.png" class="img-fluid" alt="logo-cw"></a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date">September 25, 2024</span>
-									<h2><a href="#">And this is a<br />
-									cuci wangi</a></h2>
-									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo?<br />
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis!<br />
-									Lorem ipsum dolor sit amet.</p>
-								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="#" class="button large">Full Story</a></li>
-								</ul>
-							</article>
-
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">April 24, 2024</span>
-										<h2><a href="#">Sepatu 1<br />
-										Before</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 22, 2023</span>
-										<h2><a href="#">Sepatu 2<br />
-										After</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-
-								</article>
-								<article>
-									<header>
-										<span class="date">April 18, 2022</span>
-										<h2><a href="#">Promosi<br />
-										interdum dolor</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 14, 2021</span>
-										<h2><a href="#">Porduk<br />
-										nulla imperdiet</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-
-							</section>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; CW</li><li>Design: <a href="#">Cuci Wangi</a></li></ul>
-					</div>
-
+			<!-- Intro -->
+			<div id="intro">
+				<h1>Cuci Wangi</h1>
+				<p>The Best Cleaning Shop In Bandung</p>
+				<ul class="actions">
+					<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+				</ul>
 			</div>
 
-		<!-- Scripts -->
-			<!-- Bootstrap JavaScript Lokal -->
-			<script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">Scroll Down</a>
+			</header>
 
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="generic.html">About</a></li>
+					<li><a href="elements.html">Contact</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://www.instagram.com/cuciwangi/?hl=en" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Featured Post -->
+				<article class="post featured">
+					<header class="major">
+						<h2><a href="#">Rawat Sepatu dan Sandal Kesayangan Anda</a></h2>
+						<p>CuciWangi Bandung menawarkan layanan pembersihan profesional untuk sepatu dan sandal Anda.<br />
+						Kembalikan kebersihan, kenyamanan, dan kepercayaan diri Anda dengan sepatu yang bersih dan wangi.<br />
+						Dari sneakers hingga sandal favorit, kami siap membantu menjaga tampilannya tetap prima!</p>
+					</header>
+					<a href="#" class="image main"><img src="images/hero_img.jpg" alt="" /></a>
+				</article>
+
+				<!-- Posts -->
+				<section class="posts">
+					<article>
+						<header>
+							<h2>Before</h2>
+						</header>
+						<a href="#" class="image fit"><img src="images/before.jpg" alt="Sepatu Sebelum Dibersihkan" /></a>
+						<p>Sepatu terlihat kotor dan kusam akibat debu, lumpur, atau noda membandel. Kebersihan dan tampilan asli sepatu mulai memudar, memengaruhi kepercayaan diri Anda saat menggunakannya.</p>
+					</article>			
+					<article>
+						<header>
+							<h2>After</h2>
+						</header>
+						<a href="#" class="image fit"><img src="images/after.jpg" alt="Sepatu Setelah Dibersihkan" /></a>
+						<p>Setelah melalui proses pembersihan profesional, sepatu kembali bersih, wangi, dan terlihat seperti baru. Nikmati kenyamanan dan tampil percaya diri dengan sepatu yang terawat.</p>
+					</article>
+					<article>
+						<header>
+							<h2><a href="#">Apa Kata Mereka<br />Tentang CuciWangi?</a></h2>
+						</header>
+						<a href="#" class="image fit"><img src="images/review1.jpg" alt="" style="width: 100%; height: 300px;" /></a>
+						<p>"Luar biasa! Sepatu saya kembali seperti baru." - Dinda, Bandung</p>
+					</article>
+					<article>
+						<header>
+							<h2><a href="#">Kenapa Memilih<br />CuciWangi?</a></h2>
+						</header>
+						<a href="#" class="image fit"><img src="images/review2.jpg" alt="" style="width: 100%; height: 300px;" /></a>
+						<p>✔ Pembersihan menyeluruh<br />
+							✔ Bahan aman untuk semua jenis sepatu<br />
+							✔ Layanan cepat dan berkualitas<br />
+							✔ Hasil wangi dan nyaman dipakai</p>
+					</article>
+				</section>
+
+				<!-- Tombol Cari Lokasi Terdekat -->
+				<div style="text-align: center; ">
+					<div id="map" style="width: 100%; height: 500px;"></div>
+					<button id="findClosest" class="button" style="margin-top: 30px;">Cari Lokasi Terdekat</button>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<section>
+
+				</section>
+			</footer>
+
+			<!-- Copyright -->
+			<div id="copyright">
+				<ul><li>&copy; CW</li><li>Cuci Wangi</li></ul>
+			</div>
+		</div>
+
+
+		<!-- Scripts -->
+		<script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+		<script>
+			// Cabang CuciWangi
+			const branches = [
+				{ name: "CuciWangi Surya Sumantri", coords: [-6.8854843458056525, 107.58170004248417] },
+				{ name: "CuciWangi Setiabudi", coords: [-6.872023334021956, 107.60346983063211] },
+				{ name: "CuciWangi Dago", coords: [-6.8795594248078125, 107.61807335903376] }
+			];
+
+			const map = L.map('map').setView([-6.884696208060639, 107.58849242414054], 13);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+			}).addTo(map);
+
+			branches.forEach(branch => {
+				L.marker(branch.coords).addTo(map)
+					.bindPopup(branch.name);
+			});
+
+			function getDistance(lat1, lon1, lat2, lon2) {
+				const R = 6371;
+				const dLat = (lat2 - lat1) * Math.PI / 180;
+				const dLon = (lon2 - lon1) * Math.PI / 180;
+				const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+							Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+							Math.sin(dLon / 2) * Math.sin(dLon / 2);
+				const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+				return R * c;
+			}
+
+			function findClosestBranch(userCoords) {
+				let closestBranch = null;
+				let closestDistance = Infinity;
+
+				branches.forEach(branch => {
+					const distance = getDistance(
+						userCoords.lat, userCoords.lng, 
+						branch.coords[0], branch.coords[1]
+					);
+
+					if (distance < closestDistance) {
+						closestDistance = distance;
+						closestBranch = branch;
+					}
+				});
+
+				return { branch: closestBranch, distance: closestDistance };
+			}
+
+			function fallbackToIP() {
+				fetch('https://ip-api.com/json/')
+					.then(response => response.json())
+					.then(data => {
+						const userCoords = { lat: data.lat, lng: data.lon };
+						const userMarker = L.marker(userCoords).addTo(map)
+							.bindPopup("Lokasi Anda (berdasarkan IP)")
+							.openPopup();
+						map.setView(userCoords, 15);
+						let closest = findClosestBranch(userCoords);
+						Swal.fire(`Cabang terdekat: ${closest.branch.name} (${closest.distance.toFixed(2)} km)`);
+					})
+					.catch(() => {
+						Swal.fire('Gagal mendapatkan lokasi berdasarkan IP.');
+					});
+			}
+
+			document.getElementById('findClosest').addEventListener('click', function() {
+				if (navigator.geolocation) {
+					navigator.geolocation.getCurrentPosition(position => {
+						const userCoords = {
+							lat: position.coords.latitude,
+							lng: position.coords.longitude
+						};
+						if (position.coords.accuracy > 50) {
+							Swal.fire('Lokasi Anda kurang akurat. Menggunakan fallback lokasi berdasarkan IP.');
+							fallbackToIP();
+							return;
+						}
+						const userMarker = L.marker(userCoords).addTo(map)
+							.bindPopup("Lokasi Anda")
+							.openPopup();
+						map.setView(userCoords, 15);
+						let closest = findClosestBranch(userCoords);
+						Swal.fire(`Cabang terdekat: ${closest.branch.name} (${closest.distance.toFixed(2)} km)`);
+					}, error => {
+						Swal.fire('Gagal mendapatkan lokasi Anda. Menggunakan fallback lokasi berdasarkan IP.');
+						fallbackToIP();
+					}, {
+						enableHighAccuracy: true, 
+						timeout: 10000, 
+						maximumAge: 0 
+					}); 
+				} else {
+					Swal.fire('Perangkat Anda tidak mendukung fitur geolokasi. Menggunakan fallback lokasi berdasarkan IP.');
+					fallbackToIP();
+				}
+			});
+
+		</script>
 	</body>
 </html>
